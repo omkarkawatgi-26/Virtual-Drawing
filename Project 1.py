@@ -5,7 +5,7 @@ import numpy as np
 
 def empty(a):
     pass
-
+#Stack Function for stacking images
 def stackImages(scale,imgArray):
     rows = len(imgArray)
     cols = len(imgArray[0])
@@ -104,5 +104,3 @@ while True:
     cv2.imshow("Contour",imgCon)
 
     cv2.waitKey(1)
-
-
