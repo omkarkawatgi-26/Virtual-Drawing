@@ -15,11 +15,11 @@ cv2.imshow("Dected Face",img)
 cv2.waitKey(0)
 
 
-
+## Face Detection in Video
 Webcam = cv2.VideoCapture(0)
 FaceCascade = cv2.CascadeClassifier(r"C:\Users\Omkar Kawatgi\PycharmProjects\opencv\venv\haarcascade_frontalface_default.xml")
-Webcam.set(3,1000)
-Webcam.set(4,1000)
+Webcam.set(3,1000)#Frame width
+Webcam.set(4,1000)#Frame Height
 
 while True:
     sucesses,frame = Webcam.read()
@@ -29,11 +29,3 @@ while True:
     cv2.imshow("Live", frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-
-
-
-
-
-
-
-
